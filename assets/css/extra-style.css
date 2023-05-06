@@ -1,0 +1,214 @@
+/*--------------------------------------------------------------
+# Social media
+--------------------------------------------------------------*/
+
+.facebook,
+.linkedin,
+.github,
+.whatsapp {
+  font-size: 35px !important;
+  transition: 0.7s !important;
+}
+
+.facebook{
+  background-color: #0066ff;
+  color: #ffffff !important;
+  border-radius: 50px;
+  transition: .7s;
+  padding: 4px;
+}
+
+.linkedin{
+  background-color: #1e55a7;
+  color: #ffffff !important;
+  border-radius: 5px;
+  transition: .7s;
+  padding: 4px;
+}
+
+.github{
+  background-color: #000000;
+  color: #ffffff !important;
+  border-radius: 50px;
+  transition: .7s;
+  padding: 3px;
+}
+
+.whatsapp{
+  background-color: #0fd35a;
+  color: #ffffff !important;
+  border-radius: 50px;
+  transition: .7s;
+  padding: 4px;
+}
+
+/*-----------------------------------------------------------------------
+Download  CV Button
+------------------------------------------------------------------------*/
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #0066ff;
+  color: #0e57c4;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0066ff;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.9deg) scaleY(0);
+  z-index: 50;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+/*--------------------------------------------------------------
+# Floating Animation
+--------------------------------------------------------------*/
+.floating {
+  animation: floating 2.3s ease-in-out infinite;
+  transition: .7s;
+}
+
+@keyframes floating {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+
+.floating-img {
+  transform: translateX(-15px);
+}
+
+/*--------------------------------------------------------------
+# Scroll-Bar
+--------------------------------------------------------------*/
+::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+}
+
+::-webkit-scrollbar-button {
+  width: 78px;
+  height: 78px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0D6EFD;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0D6EFD;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #0066ff;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+/*--------------------------------------------------------------
+# Hero Name GRADIENT
+--------------------------------------------------------------*/
+.b::first-letter {
+  font-weight: 200px !important;
+  font-family: "Sofia", sans-serif !important;
+}
+
+.myName {
+
+  background: linear-gradient(to right,
+      #0066ff 20%, #345584 40%, #0066ff 60%,
+      #45505B 80%);
+  background-size: 200% auto;
+
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: float 3s linear infinite;
+}
+
+@keyframes float {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Hero Typed BG and Shadow
+--------------------------------------------------------------*/
+.typed-bg{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px !important;
+}
+
+
+
